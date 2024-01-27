@@ -60,5 +60,19 @@ public class Main {
 
         int[] r = {3, 2, 1};
         System.out.print(Arrays.toString(r));
+
+        System.out.println(" ");
+
+        //Задача 4
+
+        int[] arr = new int[3];
+        arr[0] = 1;
+        arr[1] = 2;
+        arr[2] = 3;
+        for (int e = 0; e < arr.length; e++) {
+            if (arr[e] % 2 != 0){
+                arr[e]++;
+            }  System.out.print(arr[e] + " ");
+        }
     }
 }
