@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -38,5 +40,25 @@ public class Main {
 
         int[] t = {1, 2, 3};
         System.out.print(t[0] + ", " + t[1] + ", " + t[2]);
+
+        System.out.println(" ");
+
+        //Задача 3
+
+        int[] h = new int[3];
+        h[0] = 3;
+        h[1] = 2;
+        h[2] = 1;
+        System.out.print(Arrays.toString(h));
+
+        System.out.println(" ");
+
+        float[] b = {9.986f, 7.654f, 1.57f};
+        System.out.print(Arrays.toString(b));
+
+        System.out.println(" ");
+
+        int[] r = {3, 2, 1};
+        System.out.print(Arrays.toString(r));
     }
 }
