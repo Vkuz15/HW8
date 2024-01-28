@@ -3,7 +3,7 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
 
-        //Здача 1
+        System.out.println("Задача 1");
 
         int[] weights = new int[3];
         weights[0] = 1;
@@ -13,37 +13,52 @@ public class Main {
         System.out.println(weights[1]);
         System.out.println(weights[2]);
 
-        float[] i = {1.57f, 7.654f, 9.986f};
-        System.out.println(i[0]);
-        System.out.println(i[1]);
-        System.out.println(i[2]);
+        float[] fraction = {1.57f, 7.654f, 9.986f};
+        System.out.println(fraction[0]);
+        System.out.println(fraction[1]);
+        System.out.println(fraction[2]);
 
         int[] birds = {1, 2, 3};
         System.out.println(birds[0]);
         System.out.println(birds[1]);
         System.out.println(birds[2]);
 
-        //Задача 2
+        System.out.println("Задача 2");
 
         int[] numbers = new int[3];
         numbers[0] = 1;
         numbers[1] = 2;
         numbers[2] = 3;
-        System.out.print(numbers[0] + ", " + numbers[1] + ", " + numbers[2]);
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.print(numbers[i]);
+            if (i != numbers.length - 1){
+                System.out.print(", ");
+            }
+        }
 
-        System.out.println(" ");
+        System.out.println();
 
         float[] a = {1.57f, 7.654f, 9.986f};
-        System.out.print(a[0] + ", " + a[1] + ", " + a[2]);
+        for (int i = 0; i < a.length; i++) {
+            System.out.print(a[i]);
+            if (i != a.length - 1) {
+                System.out.print(", ");
+            }
+        }
 
-        System.out.println(" ");
+        System.out.println();
 
         int[] t = {1, 2, 3};
-        System.out.print(t[0] + ", " + t[1] + ", " + t[2]);
+        for (int i = 0; i < t.length; i++) {
+            System.out.print(t[i]);
+            if (i != t.length - 1) {
+                System.out.print(", ");
+            }
+        }
 
         System.out.println(" ");
 
-        //Задача 3
+        System.out.println("Задача 3");
 
         int[] h = new int[3];
         h[0] = 3;
@@ -63,16 +78,18 @@ public class Main {
 
         System.out.println(" ");
 
-        //Задача 4
+        System.out.println("Задача 4");
 
         int[] arr = new int[3];
         arr[0] = 1;
         arr[1] = 2;
         arr[2] = 3;
-        for (int e = 0; e < arr.length; e++) {
-            if (arr[e] % 2 != 0){
-                arr[e]++;
-            }  System.out.print(arr[e] + " ");
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] % 2 != 0) {
+                arr[i] = arr[i] + 1;
+            }
         }
+        System.out.println(Arrays.toString(arr));
+
     }
 }
